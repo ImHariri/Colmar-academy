@@ -144,16 +144,32 @@ h1 {
   padding-bottom: 32px;
 }
 
-
-
-.content2 {   
+.content2 {
     width: 40%;
+}
+
+.list {
+    display: flex;
+    align-items: center;
 }
 
 .list img {
     width: 35%;
+    height: auto;
+    padding: 16px;
 }
 
 .list-text {
     width: 65%;
+}
+
+.list-text h3, .list-text a {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+.list-text p {
+    padding: 8px 0;
+    margin: 0;
 }
