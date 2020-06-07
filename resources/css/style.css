@@ -62,7 +62,7 @@ header {
     width: auto;
 }
 
-h2 {
+h2, h1, h3, h4 {
     font-weight: 800;
     padding: 0;
     margin: 0;
@@ -97,7 +97,6 @@ header ul li {
 
 
 .banner {
-    
     display: flex;
     background-color: lightgray;
     align-items: center;
@@ -105,7 +104,6 @@ header ul li {
 }
 
 h1 {
-    font-size: 2.5rem;
     font-weight: 800;
 }
 
@@ -130,6 +128,8 @@ h1 {
 .content {
     display: flex;
     width: 100%;
+    border-top: 2px solid rgb(230, 227, 227);
+    background-color: rgb(230, 227, 227);
 }
 
 .content1 {
@@ -145,12 +145,30 @@ h1 {
 }
 
 .content2 {
+    padding-bottom: 32px;
     width: 40%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    border-left: 2px solid rgb(230, 227, 227);
 }
 
 .list {
     display: flex;
     align-items: center;
+}
+
+.list1 {
+    border-bottom: 1px solid gray;
+}
+
+.list2 {
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+}
+
+.list3 {
+    border-top: 1px solid gray;
 }
 
 .list img {
@@ -172,4 +190,52 @@ h1 {
 .list-text p {
     padding: 8px 0;
     margin: 0;
+}
+
+
+/* Start learning */
+
+.start-learning {
+    background-color: lightgray;
+    width: 100%;
+}
+
+
+.start-learningh2 {
+    padding-top: 32px;
+    text-align: center;
+}
+
+.flex {
+    display: flex;
+    width: auto;
+    height: auto;
+    padding: 16px 56px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.flex-unit {
+    flex: 0 0 30%;
+    height: auto;
+    margin: 16px;
+    background-color: white;
+}
+
+
+.flex-unit img {
+    width: 100%;
+    height: auto;
+}
+
+.flex-text {
+    height: auto;
+    padding: 16px;
+}
+
+.flex-text p {
+    padding: 0;
+    margin: 0;
+    margin-top: 8px;
 }
