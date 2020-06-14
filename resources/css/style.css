@@ -32,8 +32,14 @@ a {
 }
 
 
+
+
 /* Header */
 
+
+.mobileheader {
+ display: none;
+}
 
 header {
     position: fixed;
@@ -58,14 +64,13 @@ header {
 }
 
 #logo {
+    display: inherit;
     height: 3rem;
     width: auto;
 }
 
 h2, h1, h3, h4 {
     font-weight: 800;
-    padding: 0;
-    margin: 0;
     color: rgb(48, 48, 48);
 }
 
@@ -118,7 +123,10 @@ h1 {
 
 .banner-text {
     width: 70%;
-    padding: 10%;
+}
+
+.banner h3 {
+    padding: 32px 0;
 }
 
 
@@ -126,7 +134,7 @@ h1 {
 
 
 .content {
-    display: flex;
+    display: inline-flex;
     width: 100%;
     border-top: 2px solid rgb(230, 227, 227);
     background-color: rgb(230, 227, 227);
@@ -238,4 +246,151 @@ h1 {
     padding: 0;
     margin: 0;
     margin-top: 8px;
+}
+
+
+/* Last */
+
+
+.last1 {
+    width: 100%;
+    border-top: 2px solid rgb(230, 227, 227);
+    background-color: rgb(230, 227, 227);
+}
+
+.last1 h2 {
+    padding-top: 32px;
+    text-align: center;
+}
+
+.last2 {
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+
+.video {
+    width: 60%;
+    padding: 32px 24px;
+}
+
+video {
+    width: 100%;
+    height: auto;
+}
+
+.video h2 {
+    text-align: left;
+    padding-top: 24px;
+}
+
+.video p {
+    margin: 0;
+    padding-top: 8px;
+}
+
+.lastunits {
+    width: 40%;
+}
+
+.lastlist {
+    display: flex;
+}
+
+.lastlist img {
+    width: 35%;
+    padding: 16px;
+}
+
+.lasttext {
+    width: 65%;
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+}
+
+
+/* Footer */
+
+
+footer {
+    width: auto;
+    display: flex;
+    align-items: baseline;
+    border-top: 2px solid grey;
+    background-color: rgb(230, 227, 227);
+    color: rgb(48, 48, 48);
+    font-family: 'Manrope', sans-serif;
+    padding: 16px 24px 32px 24px;
+    font-size: 0.8rem;
+    justify-content: space-between;
+}
+
+.footerleft p {
+    display: inline-block;
+    padding-left: 12px;
+    margin: 0;
+}
+
+
+
+/* MEDIA */
+
+@media only screen and (max-width: 600px) {
+    .logo h2 {
+        display: none;
+    }
+
+    header ul {
+        display: none;
+    }
+
+    .logo {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .mobileheader, #logo {
+        display: inherit;
+        height: 2.5rem;
+        width: auto;
+       }
+
+    
+    /*banner*/
+
+    .banner {
+        display: block;
+        background-color: lightgray;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    
+    #banner {
+        width: 100%;
+        height: auto;
+        padding: 0;
+    }
+
+    h1 {
+        font-weight: 800;
+    }
+    
+    .banner-text {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 32px 16px;
+        margin: 0;
+    }
+
+    .banner-text h1 {
+        padding-bottom: 32px;
+        margin: 0;
+    }
+
+    .banner-text h3 {
+        padding: 0;
+        padding-bottom: 24px;
+        margin: 0;
+    }
 }
