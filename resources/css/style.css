@@ -4,6 +4,8 @@ html {
 }
 
 body {
+    width: 100%;
+    height: auto;
     margin: 0;
     padding: 0;
     border: 0;
@@ -34,7 +36,7 @@ a {
 
 
 
-/* Header */
+                                                /* Header */
 
 
 .mobileheader {
@@ -98,7 +100,7 @@ header ul li {
 }
 
 
-/* Banner */
+                                                /* Banner */
 
 
 .banner {
@@ -130,7 +132,7 @@ h1 {
 }
 
 
-/* Content */
+                                             /* Content */
 
 
 .content {
@@ -143,7 +145,7 @@ h1 {
 .content1 {
     width: 60%;
     padding: 32px 24px;
-    border-right: 1px solid gray;
+    border-right: 1px solid lightgray;
 }
 
 .content1 img {
@@ -166,23 +168,33 @@ h1 {
     align-items: center;
 }
 
+.list:hover {
+    background-color: rgb(90, 90, 90);
+    transition-duration: 300ms;
+    transition-timing-function: ease;
+  }
+
 .list1 {
-    border-bottom: 1px solid gray;
+    border-bottom: 1px solid lightgray;
 }
 
 .list2 {
-    border-top: 1px solid gray;
-    border-bottom: 1px solid gray;
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
 }
 
 .list3 {
-    border-top: 1px solid gray;
+    border-top: 1px solid lightgray;
 }
 
-.list img {
+.list .img {
     width: 35%;
     height: auto;
     padding: 16px;
+}
+
+.mobile-img{
+    display: none;
 }
 
 .list-text {
@@ -200,8 +212,11 @@ h1 {
     margin: 0;
 }
 
+.list-text a {
+    color: blue;
+}
 
-/* Start learning */
+                                                /* Start learning */
 
 .start-learning {
     background-color: lightgray;
@@ -212,6 +227,11 @@ h1 {
 .start-learningh2 {
     padding-top: 32px;
     text-align: center;
+    margin: 0;
+}
+
+h2.start-learningh2 {
+    margin: 0;
 }
 
 .flex {
@@ -249,7 +269,7 @@ h1 {
 }
 
 
-/* Last */
+                                                     /* Last */
 
 
 .last1 {
@@ -297,9 +317,21 @@ video {
     display: flex;
 }
 
-.lastlist img {
+.lastlist:hover {
+    background-color: rgb(90, 90, 90);
+    transition-duration: 300ms;
+    transition-timing-function: ease;
+  }
+
+.lastlist2 {
     width: 35%;
+    height: auto;
     padding: 16px;
+}
+
+.lastlist2 img{
+    width: 100%;
+    height: auto;
 }
 
 .lasttext {
@@ -310,7 +342,7 @@ video {
 }
 
 
-/* Footer */
+                                            /* Footer */
 
 
 footer {
@@ -334,9 +366,14 @@ footer {
 
 
 
-/* MEDIA */
+                                                        /* MEDIA */
 
 @media only screen and (max-width: 600px) {
+
+
+                                        /* header */
+
+
     .logo h2 {
         display: none;
     }
@@ -352,16 +389,16 @@ footer {
 
     .mobileheader, #logo {
         display: inherit;
-        height: 2.5rem;
+        height: 1.8rem;
         width: auto;
        }
 
     
-    /*banner*/
+                                                /*banner*/
 
     .banner {
         display: block;
-        background-color: lightgray;
+        background-color: lightgrey;
         width: 100%;
         box-sizing: border-box;
     }
@@ -393,4 +430,157 @@ footer {
         padding-bottom: 24px;
         margin: 0;
     }
+
+
+                                            /*content */
+
+
+    .content {
+        display: block;
+        width: 100%;
+        height: auto;
+        padding: 16px;
+        box-sizing: border-box;
+        background-color: rgb(230, 227, 227);
+    }
+
+    .content1 {
+        display: none;
+    }
+
+    .content2, .list {
+        display: block;
+        width: 100%;
+        height: auto;
+        border: 0;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .list .img {
+        display: none;
+        padding: 0;
+    }
+
+    .mobile-img {
+        padding-bottom: 24px;
+    }
+
+    .list-text, .mobile-img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    .list3, .list2 {
+        padding-top: 32px;
+    }
+
+    .list3, .list2 , .list1 {
+        padding-bottom: 32px;
+    }
+
+    .list-text {
+        padding-left: 16px;
+        padding-right: 16px;
+        box-sizing: border-box;
+    }
+
+
+                                            /* start learning */
+
+    .start-learning{
+        display: block;
+        width: 100%;
+        height: auto;
+        box-sizing: border-box;
+        padding: 32px 16px;
+        background-color: rgb(230, 227, 227);
+        border-top: 2px solid lightgrey;
+    }
+
+    .start-learningh2 {
+        padding: 0;
+        margin: 0ch;
+        padding-bottom: 16px;
+    }
+
+    .flex{
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0;
+    }
+
+    .flex-text {
+        padding: 0;
+        margin: 0;
+        margin-bottom: 8px;
+    }
+
+    .flex-unit {
+        padding: 0;
+        margin: 0;
+    }
+
+    .start-learning img, .start-learning p {
+        display: none;
+    }
+
+    .start-learning h3 {
+        display: block;
+        box-sizing: border-box;
+        width: 100%;
+        height: auto;
+        margin: 0;
+        padding: 16px;
+        background-color: lightgrey;
+    }
+
+
+                                        /* video */
+
+
+    .last1, .last2 {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    .last1 h2 {
+        padding: 0;
+        margin: 0;
+        padding-top: 21px;
+        border-top: 2px solid lightgrey;
+    }
+
+    .video {
+        display: block;
+        width: 100%;
+        height: auto;
+        padding: 16px 0 24px 0;
+        margin: 0;
+    }
+
+    .video h2, .video p, .lastunits {
+        display: none;
+    }
+
+
+    /* footer */
+
+    footer {
+        display: block;
+        width: 100%;
+        height: auto;
+        padding: 16px;
+        margin: 0;
+    }
+
+    .footerleft {
+        display: none;
+    }
+
+
 }
